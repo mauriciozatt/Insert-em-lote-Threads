@@ -1,0 +1,64 @@
+unit UnPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
+  FireDAC.DApt.Intf, Data.DB, Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls,
+  Vcl.ExtCtrls, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TfrmPrincipal = class(TForm)
+    cdsDados: TFDMemTable;
+    Panel1: TPanel;
+    Edit1: TEdit;
+    Button1: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit2: TEdit;
+    Panel2: TPanel;
+    DBGrid1: TDBGrid;
+    dsDados: TDataSource;
+    cdsDadosID: TIntegerField;
+    cdsDadosDESCRICAO: TStringField;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.Button1Click(Sender: TObject);
+var
+  I: Integer;
+begin
+//sql de insert eu defini no fdquery, mas poderia passar por aqui sql.add()
+
+  FDQuery1.Params.ArraySize := 100;  //define a quantidade de registros da Matriz
+
+  for I := 0 to 100 - 1 do
+  begin
+  //campos da minha tabela
+    FDQuery1.Params[0].AsIntegers[I] := I;
+    FDQuery1.Params[1].AsIntegers[I] := 1;
+    FDQuery1.Params[2].AsDateTimes[I] := Now;
+    FDQuery1.Params[3].AsStrings[I] := 'TESTE3';
+    FDQuery1.Params[4].AsStrings[I] := 'TESTE4';
+    FDQuery1.Params[5].AsStrings[I] := 'TESTE5';
+    FDQuery1.Params[6].AsStrings[I] := 'TESTE6';
+  end;
+
+  FDQuery1.Execute(100, 0);
+
+end;
+
+end.
