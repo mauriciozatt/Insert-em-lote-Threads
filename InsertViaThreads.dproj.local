@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2020/08/28 23:18:55.000.559,=C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/10/24 14:44:41.376,=C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/10/24 14:56:05.050,C:\Users\Igor\Desktop\Uteis\Projetos Delphi\InsertViaThreads\Insert-em-lote-utilizando-Array-DML-Threads\UnPrincipal.pas=C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2020/10/24 14:56:05.050,C:\Users\Igor\Desktop\Uteis\Projetos Delphi\InsertViaThreads\Insert-em-lote-utilizando-Array-DML-Threads\UnPrincipal.dfm=C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2020/10/24 14:56:18.826,C:\Users\Igor\Desktop\Uteis\Projetos Delphi\InsertViaThreads\Insert-em-lote-utilizando-Array-DML-Threads\InsertViaThreads.dproj=C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/10/24 14:44:41.000.376,=C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/24 14:56:05.000.050,C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Igor\Desktop\Uteis\Projetos Delphi\InsertViaThreads\Insert-em-lote-utilizando-Array-DML-Threads\UnPrincipal.dfm</Transaction>
+    <Transaction>2020/10/24 14:56:05.000.050,C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Igor\Desktop\Uteis\Projetos Delphi\InsertViaThreads\Insert-em-lote-utilizando-Array-DML-Threads\UnPrincipal.pas</Transaction>
+    <Transaction>2020/10/24 14:56:18.000.826,C:\Users\Igor\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Igor\Desktop\Uteis\Projetos Delphi\InsertViaThreads\Insert-em-lote-utilizando-Array-DML-Threads\InsertViaThreads.dproj</Transaction>
   </Transactions>
 </BorlandProject>

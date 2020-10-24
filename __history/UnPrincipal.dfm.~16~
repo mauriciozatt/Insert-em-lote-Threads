@@ -1,0 +1,143 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Tela principal'
+  ClientHeight = 507
+  ClientWidth = 880
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 880
+    Height = 145
+    Align = alTop
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = -6
+    object Label1: TLabel
+      Left = 24
+      Top = 23
+      Width = 240
+      Height = 19
+      Caption = 'Quantidade de Registros '#224'  inserir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 24
+      Top = 77
+      Width = 37
+      Height = 19
+      Caption = 'Valor'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edtQuantidade: TEdit
+      Left = 24
+      Top = 48
+      Width = 81
+      Height = 21
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 433
+      Top = 8
+      Width = 232
+      Height = 61
+      Caption = 'Insert Registros Via Thread Anonima'
+      DragCursor = crHandPoint
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+    object edtDescricao: TEdit
+      Left = 24
+      Top = 98
+      Width = 403
+      Height = 21
+      TabOrder = 2
+    end
+    object Button2: TButton
+      Left = 433
+      Top = 75
+      Width = 232
+      Height = 44
+      Caption = 'DD'
+      TabOrder = 3
+      OnClick = Button2Click
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 145
+    Width = 465
+    Height = 362
+    Align = alLeft
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 1
+      Top = 1
+      Width = 463
+      Height = 360
+      Align = alClient
+      DataSource = dsDados
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'ID'
+          ReadOnly = True
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'DESCRICAO'
+          ReadOnly = True
+          Visible = True
+        end>
+    end
+  end
+  object Memo1: TMemo
+    Left = 470
+    Top = 151
+    Width = 402
+    Height = 348
+    Align = alCustom
+    TabOrder = 2
+  end
+  object dsDados: TDataSource
+    Left = 128
+    Top = 248
+  end
+  object cdsDados: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 312
+    Top = 264
+  end
+end
